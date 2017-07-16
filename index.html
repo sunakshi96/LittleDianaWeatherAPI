@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/javascript.js">
+			  if(navigator.geolocation){
+
+    navigator.geolocation.getCurrentPosition(function(position){
+
+      $("#data").html("latitude:"+position.coords.latitude+"<br> longitude:"+position.coords.longitude);
+
+    });
+
+  }
+	</script>
+</head>
+<body>
+<p id="data">
+	<h4>You are here:</h4>
+</p>
+</body>
+</html>
